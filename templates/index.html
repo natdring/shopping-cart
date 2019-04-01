@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sheet.css')}}">
+    <script src="{{ url_for('static', filename='script.js')}}"></script>
+  </head>
+  <body>
+    <h1 id = "title">Shopping Cart</h1>
+    <div class="search">
+      <input type="text" placeholder="Search.." id="search">
+    </div>
+    <div id="button"> 
+      <button type="search" onclick="clicked();">Search</button>
+    </div>
+
+    <div id="table">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+  </body>
+</html>
