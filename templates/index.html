@@ -11,12 +11,15 @@
     <div class="search">
       <input type="text" placeholder="Search.." id="search">
     </div>
-    <div id="button"> 
-      <button type="search" onclick="clicked();">Search</button>
+    <div id="searchButton"> 
+      <button type="search" onclick="searchClicked();">Search</button>
     </div>
+    <div id="allButton"> 
+        <button type="search" onclick="allClicked();">Display All Products</button>
+      </div>
 
     <div id="table">
-      <table>
+      <table id="myTable">
         <thead>
           <tr>
             <th>ID</th>
